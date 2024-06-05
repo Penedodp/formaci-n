@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.table-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.poster {
+    flex: 1;
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .table-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .poster {
+        margin-left: 0;
+    }
+}

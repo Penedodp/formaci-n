@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #999; /* Aumentamos el grosor del borde y lo hacemos un poco más oscuro */
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Añadimos una transición para el cambio de color del borde */
+}
+
+input[type="text"]::placeholder,
+select::placeholder {
+    color: #666; /* Oscurecemos el color del placeholder */
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #007bff; /* Cambiamos el color del borde al enfocar */
+}
+
+input[type="submit"] {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333; /* Color gris oscuro */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #555; /* Color gris más oscuro al pasar el ratón */
+}
+
+input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0056b3;
+}
